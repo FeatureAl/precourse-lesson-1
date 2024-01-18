@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    font-style: normal;
+    line-height: normal;
+    font-family: Lato, sans-serif;
+}
+
 ul {
     list-style: none;
 }
@@ -47,43 +53,40 @@ section {
     color: rgba(20, 20, 20, 0.90);
     font-family: Montserrat, sans-serif;
     font-size: 38px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     letter-spacing: 0.38px;
 }
 
 .subtitle {
     color: rgba(20, 20, 20, 0.40);
-    font-family: Lato;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: 0.16px;
-
+    margin-bottom: 60px;
 }
 
 .text {
     color: rgba(20, 20, 20, 0.70);
     font-family: Rubik;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 30px;
     /* 166.667% */
     letter-spacing: 0.18px;
+    margin-bottom: 65px;
+}
+
+.colors {
+    margin-bottom: 65px;
 }
 
 .title {
     color: rgba(20, 20, 20, 0.40);
-    font-family: Lato;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     letter-spacing: 0.16px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .circle {
@@ -114,6 +117,7 @@ section {
 }
 
 li.selected {
+    background-color: #FFF;
     width: 30px;
     height: 30px;
     border-radius: 50px;
@@ -126,9 +130,7 @@ li.selected {
     color: rgba(20, 20, 20, 0.80);
     font-family: Rubik, sans-serif;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.2px;
     text-transform: uppercase;
     border: none;
@@ -143,14 +145,21 @@ li.selected {
     color: rgba(20, 20, 20, 0.80);
     font-family: Rubik;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
     letter-spacing: 0.2px;
     text-transform: uppercase;
 }
 
 .btn {
     height: 70px;
+    width: 100%;
     background-color: #141414;
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 18px;
+    font-weight: 500;
+
+    letter-spacing: 0.18px;
+
+    margin-bottom: 75px;
 }
