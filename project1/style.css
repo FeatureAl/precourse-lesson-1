@@ -17,6 +17,9 @@ ul {
 section {
     background-color: #EFF2F9;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -25,27 +28,51 @@ section {
     background: #FFF;
     box-shadow: 20px 20px 40px 0px rgba(81, 91, 117, 0.25);
     padding: 60px 0 70px 0;
+    display: flex;
 }
 
 .product-image-block {
-    width: 540px;
+    min-width: 540px;
     border-right: 2px solid rgba(20, 20, 20, 0.15);
+    display: flex;
+    flex-direction: column;
+}
 
+.main-image-wrapper {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.previews-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
 }
 
 .preview {
     width: 80px;
     height: 80px;
-    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
 
 }
 
+.preview:hover,
 .preview.selected {
     box-shadow: 8px 8px 16px 0px rgba(81, 91, 117, 0.25);
 }
 
+
+
 .product-info-block {
     padding: 0 60px;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -71,7 +98,6 @@ section {
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    /* 166.667% */
     letter-spacing: 0.18px;
     margin-bottom: 65px;
 }
@@ -87,6 +113,12 @@ section {
     letter-spacing: 0.16px;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+.color-items {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .circle {
@@ -116,6 +148,21 @@ section {
     background-color: #F2C723;
 }
 
+.color-items > li {
+    width: 30px;
+    height: 30px;
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2ss;
+}
+
+.color-items > li:hover,
+.color-items > li.selected {
+    box-shadow: 2px 2px 6px 0px rgba(81, 91, 117, 0.25);
+}
+
+
 li.selected {
     background-color: #FFF;
     width: 30px;
@@ -123,6 +170,14 @@ li.selected {
     border-radius: 50px;
     padding: 7px;
     box-shadow: 2px 2px 6px 0px rgba(81, 91, 117, 0.25);
+}
+
+.wrapper {
+    display: flex;
+}
+
+.wrapper > div {
+    flex-grow: 1;
 }
 
 .quantity {
@@ -135,10 +190,10 @@ li.selected {
     text-transform: uppercase;
     border: none;
     appearance: none;
-
     background-image: url(./assets/Vector.svg);
     background-repeat: no-repeat;
     background-position: right 0 top 50%;
+    cursor: pointer;
 }
 
 .price {
@@ -158,8 +213,12 @@ li.selected {
     font-family: Rubik;
     font-size: 18px;
     font-weight: 500;
-
     letter-spacing: 0.18px;
+    margin-top: 75px;
+    cursor: pointer;
+    transition: 0.2s;
+}
 
-    margin-bottom: 75px;
+.btn:hover {
+    transform: translateY(-5px);
 }
